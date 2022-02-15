@@ -349,19 +349,19 @@
       <div class="col-md-6">
         <form>
           <div class="form-group">
-            <label for="name">Nome</label>
+            <label for="name">Nome*</label>
             <input type="name" class="form-control" id="nome" onkeyup="validarNome()"/>
             <div id="txtNome"></div>
           </div>
 
           <div class="form-group">
-            <label for="email">Endereço de e-mail</label>
+            <label for="email">Endereço de e-mail*</label>
             <input type="email" class="form-control" id="email" onkeyup="validarEmail()" placeholder="name@example.com" />
             <div id="txtEmail"></div>
           </div>
 
           <div class="form-group">
-            <label for="textarea">Mensagem</label>
+            <label for="textarea">Mensagem*</label>
             <textarea class="form-control" id="mensagem" onkeyup="validarMensagem()" rows="3"></textarea>
             <div id="txtMensagem"></div>
           </div>
@@ -395,11 +395,27 @@
 
   <footer class="footer" style="background-color: #ef767a;">
     <hr />
-    <div class="row pb-3">
+
+    <div class="row">
+
+      <div class="col-md-12 d-flex justify-content-center">
+        <a href="https://twitter.com" target="_blank">
+          <box-icon size="sm" type="logo" name="twitter"></box-icon>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <box-icon size="sm" type="logo" name="instagram"></box-icon>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <box-icon size="sm" type="logo" name="linkedin-square"></box-icon>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
       <div class="col-md-12 d-flex justify-content-center align-items-center">
-        <small class="text-center text-light">
+        <p class="text-center">
           Todos os direitos reservados - BoloMania&copy
-        </small>
+        </p>
       </div>
     </div>
   </footer>
