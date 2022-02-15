@@ -17,15 +17,18 @@
         text-decoration: none;
         color: #ef767a;
       }
+
+      .row {
+        margin: 0;
+      }
     </style>
   </head>
   <body>
-
     <!--NAVBAR-->
 
     <nav
       id="home"
-      class="navbar navbar-expand-lg navbar-light"
+      class="navbar navbar-expand-lg navbar-dark"
       style="background-color: #ef767a"
     >
       <a class="navbar-brand" href="#">BoloMania</a>
@@ -117,7 +120,7 @@
       </h1>
 
       <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-12">
           <p class="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             magnam itaque autem fuga perferendis. Laboriosam assumenda, pariatur
@@ -132,7 +135,8 @@
           </p>
         </div>
 
-        <div class="col-md-6">
+
+        <div class="col-md-6 d-xs-none d-sm-none d-md-block">
           <iframe
             width="560"
             height="315"
@@ -147,7 +151,8 @@
       </div>
 
       <div class="row">
-        <div class="col-md-12">
+        
+        <div class="col-md-12 col-md-6 d-xs-none d-sm-none d-md-block">
           <a href="">
             <box-icon size="lg" type="logo" name="twitter"></box-icon>
           </a>
@@ -159,6 +164,38 @@
           </a>
         </div>
       </div>
+
+      <div class="d-none d-sm-block d-md-none">
+        <div class="row mt-3">
+          <div class="col-sm-12 d-flex justify-content-center">
+            <iframe
+              width="500"
+              height="300"
+              src="https://www.youtube.com/embed/ujfuTTbgw2E"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+  
+        <div class="row mt-5 d-flex justify-content-center">
+          <div class="col-sm-6 d-flex justify-content-around">
+            <a href="">
+              <box-icon size="lg" type="logo" name="twitter"></box-icon>
+            </a>
+            <a href="">
+              <box-icon size="lg" type="logo" name="instagram"></box-icon>
+            </a>
+            <a href="">
+              <box-icon size="lg" type="logo" name="linkedin-square"></box-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- GALERIA DE PRODUTOS -->
@@ -176,21 +213,36 @@
         <div class="col-md-4">
           <h4 class="text-center">Bolo</h4>
           <figure class="d-flex justify-content-center">
-            <img style="width: 80%" src="./assets/img/bolo4.jpg" alt="" />
+            <img
+              class="rounded-circle"
+              style="width: 80%"
+              src="./assets/img/bolo4.jpg"
+              alt=""
+            />
           </figure>
         </div>
 
         <div class="col-md-4">
           <h4 class="text-center">Bolo</h4>
           <figure class="d-flex justify-content-center">
-            <img style="width: 80%" src="./assets/img/bolo4.jpg" alt="" />
+            <img
+              class="rounded-circle"
+              style="width: 80%"
+              src="./assets/img/bolo4.jpg"
+              alt=""
+            />
           </figure>
         </div>
 
         <div class="col-md-4">
           <h4 class="text-center">Bolo</h4>
           <figure class="d-flex justify-content-center">
-            <img style="width: 80%" src="./assets/img/bolo4.jpg" alt="" />
+            <img
+              class="rounded-circle"
+              style="width: 80%"
+              src="./assets/img/bolo4.jpg"
+              alt=""
+            />
           </figure>
         </div>
       </div>
@@ -199,21 +251,36 @@
         <div class="col-md-4">
           <h4 class="text-center">Bolo</h4>
           <figure class="d-flex justify-content-center">
-            <img style="width: 80%" src="./assets/img/bolo4.jpg" alt="" />
+            <img
+              class="rounded-circle"
+              style="width: 80%"
+              src="./assets/img/bolo4.jpg"
+              alt=""
+            />
           </figure>
         </div>
 
         <div class="col-md-4">
           <h4 class="text-center">Bolo</h4>
           <figure class="d-flex justify-content-center">
-            <img style="width: 80%" src="./assets/img/bolo4.jpg" alt="" />
+            <img
+              class="rounded-circle"
+              style="width: 80%"
+              src="./assets/img/bolo4.jpg"
+              alt=""
+            />
           </figure>
         </div>
 
         <div class="col-md-4">
           <h4 class="text-center">Bolo</h4>
           <figure class="d-flex justify-content-center">
-            <img style="width: 80%" src="./assets/img/bolo4.jpg" alt="" />
+            <img
+              class="rounded-circle"
+              style="width: 80%"
+              src="./assets/img/bolo4.jpg"
+              alt=""
+            />
           </figure>
         </div>
       </div>
@@ -221,59 +288,95 @@
 
     <!-- CARDS DE DEPOIMENTOS -->
 
-    <div class="depoimentos" id="depoimentos" style="background-color: #ffe347">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="cards">
-          <div class="col-md-2">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-          </div>
+    <div
+    class="depoimentos p-5"
+    id="depoimentos"
+    style="background-color: #ffe347">
 
-          <div class="col-md-2">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-          </div>
+    <div class="d-sm-block d-md-none">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="text-center" style="font-weight: bolder; color: #ef767a">
+          Depoimentos
+          </h2>
+        </div>
+      </div>
+    </div>
+    
 
-          <div class="col-md-2">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
+    <div
+      class="d-flex flew-wrap justify-content-center"
+    >
+
+      <div
+        class="row d-flex  flex-column justify-content-around align-items-center"
+      >
+        <div class="m-3 col-md-3 d-none d-md-">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Maria das Graças</h5>
+              <p class="card-text">Maravilhoso!</p>
+            </div>
+            <div class="card-footer">
+              <small class="card-subtitle text-muted">5/10/2021</small>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <h2 style="font-weight: bolder; color: #ef767a">Depoimentos</h2>
+        <div class="m-3 col-md-3">
+          <div class="card" style="width: 18rem">
+            
+            <div class="card-body">
+              <h5 class="card-title">João Bobão</h5>
+              <p class="card-text">
+                Todos os bolos são ótimos. Pessoal da festa ficou super
+                satisfeito.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="card-subtitle text-muted">5/10/2021</small>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <p>
+      <div
+        class="row d-flex flex-column justify-content-around align-items-center"
+      >
+        <div class="m-3 col-md-3">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Babu</h5>
+              <p class="card-text">
+                Bolinhos para todos os momentos, seja em aniversários, casamento
+                ou qualquer celebração, eles sempre entregam!
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="card-subtitle text-muted">5/10/2021</small>
+            </div>
+          </div>
+        </div>
+        <div class="m-3 col-md-3">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Aninha</h5>
+              <p class="card-text">Compro sempre e recomendo :)</p>
+            </div>
+            <div class="card-footer">
+              <small class="card-subtitle text-muted">5/10/2021</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center justify-content-around">
+        <div class="col-md-6 d-none d-md-block">
+          <h2 class="text-center" style="font-weight: bolder; color: #ef767a">
+            Depoimentos
+          </h2>
+
+          <p style="text-align: center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             fuga voluptates ex laboriosam? Earum, aspernatur. Natus laudantium,
             debitis facilis voluptate explicabo ducimus possimus labore nostrum
@@ -282,6 +385,8 @@
         </div>
       </div>
     </div>
+  </div>
+
 
     <!-- CONTATO -->
     <div class="container mt-5" id="contato">
@@ -326,7 +431,7 @@
           </form>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 d-none d-md-block">
           <h6>Horto Florestal, São Paulo - SP</h6>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14640.66064554893!2d-46.64109732807448!3d-23.454506220904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef71fd32d1739%3A0x4e300cf9e4fc04fd!2sHorto%20Florestal%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1644895939478!5m2!1spt-BR!2sbr"
@@ -343,7 +448,12 @@
     <div class="row mt-5">
       <div class="col-md-12 d-flex justify-content-center">
         <a href="#home" class="d-flex flex-column align-items-center">
-          <box-icon size="lg" type="solid" name="up-arrow-circle"></box-icon>
+          <box-icon
+            class="icon"
+            size="lg"
+            type="solid"
+            name="up-arrow-circle"
+          ></box-icon>
           <span style="color: #000000; text-decoration: none"
             >Voltar ao início</span
           >
@@ -352,12 +462,12 @@
     </div>
 
     <!-- FOOTER -->
-    
-    <hr style="color: #ffe347" />
-    <footer>
+
+    <footer class="footer mt-3" style="background-color: #ef767a;">
+      <hr/>
       <div class="row">
         <div class="col-md-12 d-flex justify-content-center">
-          <p class="text-center">
+          <p class="text-center text-light">
             Todos os direitos reservados - BoloMania&copy
           </p>
         </div>
