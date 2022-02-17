@@ -8,7 +8,7 @@ let mensagemOk = false
 
 function validarNome() {
     let txtNome = document.querySelector('#txtNome')
-    if(nome.value.length < 3) {
+    if (nome.value.length < 3) {
         txtNome.innerHTML = 'Nome inválido'
         txtNome.style.color = 'red'
         nomeOk = false
@@ -18,9 +18,9 @@ function validarNome() {
     }
 }
 
-function validarEmail(){
+function validarEmail() {
     let txtEmail = document.querySelector('#txtEmail')
-    if((email.value.indexOf('@') == -1) || (email.value.indexOf('.') == -1)) {
+    if ((email.value.indexOf('@') == -1) || (email.value.indexOf('.') == -1)) {
         txtEmail.innerHTML = 'Email inválido'
         txtEmail.style.color = 'red'
         emailOk = false
@@ -33,10 +33,10 @@ function validarEmail(){
 function validarMensagem() {
     let txtAssunto = document.querySelector('#txtMensagem')
     let contCaracteres = mensagem.value.length
-    
+
     txtMensagem.innerHTML = contCaracteres
 
-    if(mensagem.value.length > 250) {
+    if (mensagem.value.length > 250) {
         txtMensagem.innerHTML = contCaracteres + ' - Por favor diminua a quantidade de caracteres.'
         txtMensagem.style.color = 'red'
         mensagemOk = false
@@ -48,7 +48,7 @@ function validarMensagem() {
 }
 
 function enviar() {
-    if(nomeOk && emailOk && mensagemOk){
+    if (nomeOk && emailOk && mensagemOk) {
         alert('Mensagem enviada. Obrigade por entrar em contato!')
     } else {
         alert('Preencha o formulário corretamente.')

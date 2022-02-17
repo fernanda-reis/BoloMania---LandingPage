@@ -18,6 +18,10 @@
     .row {
       margin: 0;
     }
+
+    .fixed-bottom {
+      left: auto !important;
+    }
   </style>
 </head>
 
@@ -104,7 +108,7 @@
       </div>
 
       <!-- dispositivos tamanho medio -->
-      <div class="col-md-6 d-none d-sm-none d-md-block">
+      <div class="col-md-6 d-none d-md-block">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ujfuTTbgw2E" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -113,9 +117,9 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row d-none d-md-block">
 
-      <div class="col-md-12 col-md-6 d-xs-none d-sm-none d-md-block">
+      <div class="col-md-6 ">
         <a href="">
           <box-icon size="lg" type="logo" name="twitter"></box-icon>
         </a>
@@ -129,7 +133,7 @@
     </div>
 
     <!-- dispositivos tamanho pequeno -->
-    <div class="d-none d-sm-block d-md-none">
+    <div class="d-md-none d-xm-block">
       <div class="row mt-3">
         <div class="col-sm-12 d-flex justify-content-center">
           <iframe width="500" height="300" src="https://www.youtube.com/embed/ujfuTTbgw2E" title="YouTube video player"
@@ -285,8 +289,7 @@
           </h2>
 
           <p style="text-align: center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            fuga voluptates ex laboriosam? Earum, aspernatur.
+            Confira o que estão dizendo os nossos BoloManíacos!
           </p>
         </div>
       </div>
@@ -294,15 +297,22 @@
   </div>
 
   <!-- tamanho pequeno -->
-  <div class=" d-sm-block d-md-none depoimentos p-5 d-none d-sm-block" id="depoimentos" style="background-color: #ffe347">
+  <div class="depoimentos p-5 d-md-none d-xm-block d-sm-block" id="depoimentos"
+    style="background-color: #ffe347">
 
-      <div class="row">
-        <div class="col-sm-12">
-          <h2 class="text-center" style="font-weight: bolder; color: #ef767a">
-            Depoimentos
-          </h2>
-        </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center" style="font-weight: bolder; color: #ef767a">
+          Depoimentos
+        </h2>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <p class="text-center">Confira o que estão dizendo os nossos BoloManíacos!</p>
+      </div>
+    </div>
 
 
     <div class="d-flex flex-column align-items-center">
@@ -350,13 +360,14 @@
         <form>
           <div class="form-group">
             <label for="name">Nome*</label>
-            <input type="name" class="form-control" id="nome" onkeyup="validarNome()"/>
+            <input type="name" class="form-control" id="nome" onkeyup="validarNome()" />
             <div id="txtNome"></div>
           </div>
 
           <div class="form-group">
             <label for="email">Endereço de e-mail*</label>
-            <input type="email" class="form-control" id="email" onkeyup="validarEmail()" placeholder="name@example.com" />
+            <input type="email" class="form-control" id="email" onkeyup="validarEmail()"
+              placeholder="name@example.com" />
             <div id="txtEmail"></div>
           </div>
 
@@ -378,35 +389,41 @@
         <p>Horto Florestal, São Paulo - SP</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14640.66064554893!2d-46.64109732807448!3d-23.454506220904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef71fd32d1739%3A0x4e300cf9e4fc04fd!2sHorto%20Florestal%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1644895939478!5m2!1spt-BR!2sbr"
-          width="600" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+          width="550" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </div>
- 
-  <div class="row mb-3">
-    <div class="col-md-12 d-flex justify-content-end fixed-bottom">
-      <a href="#home" class="d-flex flex-column align-items-center">
-        <box-icon class="icon" size="lg" type="solid" name="up-arrow-circle"></box-icon>
-      </a>
-    </div>
+
+
+  <!-- SETA VOLTAR AO INICIO -->
+  <div class="d-none d-sm-block">
+    <a href="#home" class="fixed-bottom">
+      <box-icon class="icon" size="lg" type="solid" name="up-arrow-circle"></box-icon>
+    </a>
   </div>
 
+  <div class="d-block d-sm-none">
+    <a href="#home" class="row d-flex flex-column align-items-center justify-content-center">
+      <box-icon class="icon" size="lg" type="solid" name="up-arrow-circle"></box-icon>
+      <p class="text-center" style="color: black">Voltar ao início</p>
+    </a>
+  </div>
+    
   <!-- FOOTER -->
 
   <footer class="footer" style="background-color: #ef767a;">
     <hr />
 
     <div class="row">
-
       <div class="col-md-12 d-flex justify-content-center">
         <a href="https://twitter.com" target="_blank">
-          <box-icon size="sm" type="logo" name="twitter"></box-icon>
+          <box-icon size="md" type="logo" name="twitter"></box-icon>
         </a>
         <a href="https://instagram.com" target="_blank">
-          <box-icon size="sm" type="logo" name="instagram"></box-icon>
+          <box-icon size="md" type="logo" name="instagram"></box-icon>
         </a>
         <a href="https://linkedin.com" target="_blank">
-          <box-icon size="sm" type="logo" name="linkedin-square"></box-icon>
+          <box-icon size="md" type="logo" name="linkedin-square"></box-icon>
         </a>
       </div>
     </div>
